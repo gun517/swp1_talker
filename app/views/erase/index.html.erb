@@ -1,0 +1,11 @@
+<div class="erase-page">
+  <h1 class="title">기억 삭제</h1>
+  <%= form_tag '/erase', method: 'post', class: "erase-form" do %>
+    <h2>어떤 질문에 대한 답을 삭제</h2>
+    <textarea placeholder="질문을 적어주세요." name="ask" rows="5" required></textarea><br>
+    <input type="submit" value="질문선정">
+  <% end %>
+  <a href="/">
+    <div class="back-button">돌아가기</div>
+  </a>
+</div>

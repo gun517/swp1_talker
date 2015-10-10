@@ -1,0 +1,17 @@
+<div class="erase-page">
+  <h1 class="title">기억 삭제</h1>
+  <%= form_tag '/erase', method: 'post', class: "erase-form" do %>
+    <h2>삭제할 답변을 선택해주세요.</h2>
+
+
+<% Talk.where(ask: @erase).each do |p| %>
+   <%= p.answer %>
+<% end %>
+    
+
+    <input type="submit" value="질문삭제">
+  <% end %>
+  <a href="/">
+    <div class="back-button">돌아가기</div>
+  </a>
+</div>

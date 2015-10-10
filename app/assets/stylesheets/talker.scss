@@ -9,7 +9,7 @@
     opacity: 0.8;
     position: absolute;
     width: 100%;
-    line-height: 50px;
+    line-height: 30px;
     border: none;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -21,6 +21,23 @@
       opacity: 1;
     }
   }
+  .erase-button {
+    opacity: 0.8;
+    position: absolute;
+    top: 31px;
+    width: 100%;
+    line-height: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }  
   .chat {
     height: 92%;
     padding: 10px;
